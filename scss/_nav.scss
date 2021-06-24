@@ -1,0 +1,89 @@
+body {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  @media screen and (max-width: 490px) {
+    width: 100%;
+  }
+}
+// navbar
+
+.navbar {
+  font-size: 1.2rem;
+  background: whitesmoke;
+
+  & img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+  .more {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    margin-left: 20px;
+
+    span:first-child {
+      border-bottom: 3px solid red;
+      width: 0%;
+    }
+    span:last-child {
+      margin-top: 2px;
+      border-bottom: 3px solid black;
+      width: 0%;
+    }
+    // @media screen and (max-width: 990px) {
+    //   & > span {
+    //     display: none;
+    //   }
+    //   margin-left: 0px;
+    // }
+    &:hover span:first-child {
+      animation: increase 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 forwards;
+
+      @keyframes increase {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    }
+    &:hover span:last-child {
+      animation: increase2 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s 1
+        forwards;
+
+      @keyframes increase2 {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  //mq
+  .m-log {
+    display: none;
+    @media screen and (max-width: 990px) {
+      display: block;
+    }
+  }
+  .m-log2 {
+    @media screen and (max-width: 990px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    #more-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .item a {
+      color: red;
+    }
+  }
+}

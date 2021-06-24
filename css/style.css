@@ -1,0 +1,93 @@
+body {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 490px) {
+  body {
+    width: 100%;
+  }
+}
+
+.navbar {
+  font-size: 1.2rem;
+  background: whitesmoke;
+}
+
+.navbar img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.navbar .more {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.navbar .more span:first-child {
+  border-bottom: 3px solid red;
+  width: 0%;
+}
+
+.navbar .more span:last-child {
+  margin-top: 2px;
+  border-bottom: 3px solid black;
+  width: 0%;
+}
+
+.navbar .more:hover span:first-child {
+  animation: increase 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 forwards;
+}
+
+@keyframes increase {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.navbar .more:hover span:last-child {
+  animation: increase2 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s 1 forwards;
+}
+
+@keyframes increase2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.navbar .m-log {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar .m-log {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar .m-log2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar #more-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .item a {
+    color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */
