@@ -7,13 +7,13 @@
     <title>VA Scanner</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" alt="logo"
+          ><img src="Images/logo.png" alt="logo"
         /></a>
         <button class="btn btn-outline-dark m-log" type="submit">
           Sign In/Sign Up
@@ -74,7 +74,86 @@
         </div>
       </div>
     </nav>
-    <header></header>
+    <header>
+      <div class="intro">
+        <h1>TechForing Vulnerability scanner</h1>
+        <p>
+          THIRDEYE is an online vulnerability scanner that finds cyber security
+          weaknesses in your digital infrastructure before hackers do. Discover
+          common web application vulnerabilities and server configuration
+          issues.
+        </p>
+        <form>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput"
+              placeholder="https://example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput2"
+              placeholder="your email address"
+            />
+          </div>
+          <button class="d-block" type="submit">FREE SCAN</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <!-- partners -->
+      <section class="companies">
+        <div class="bdr-top"></div>
+        <h1>Trusted bt IT & Telecom companies like</h1>
+        <img class="partners2" src="Images/partners2.PNG" alt="consumer" />
+        <img class="partners1" src="Images/partners.jpg" alt="consumer" />
+      </section>
+
+      <!-- full scan -->
+      <section class="full__scan">
+        <div class="bdr-top"></div>
+
+        <div class="full__scan-info">
+          <h1>WANT A FULL SCAN?</h1>
+          <p>
+            Website Vulnerability Free scan performs a passive web security scan
+            in order to detect issues like: outdated server software,insecure
+            HTTP headers,insecure cookie settings and a few others.We recommend
+            doing a Full Scan for a comprehensive website assessment which
+            includes detection of SQL Injection,XSS,Local File Inclusion,OS
+            Command Injection and more.
+          </p>
+          <button class="f-scan">FULL SCAN</button>
+        </div>
+        <div class="full__scan-report">
+          <div>
+            <h3>Sample Report</h3>
+            <p>Here is a Website Vulnerability Scanner sample report:</p>
+            <ul>
+              <li>
+                The report starts with a quick summary of the findings and risk
+                ratings
+              </li>
+              <li>
+                Each finding has a detailed explanation in terms of risk and
+                recommendations
+              </li>
+              <li>The Vulnerabilities are ordered by risk level</li>
+            </ul>
+          </div>
+          <div><img src="Images/4.png" alt="report" /></div>
+        </div>
+      </section>
+
+      <!-- THIRDEYE -->
+    </main>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
