@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 990px) {
   body {
     width: 100%;
   }
@@ -12,6 +12,7 @@ body {
 
 .navbar {
   font-size: 1.2rem;
+  font-weight: bold;
   background: whitesmoke;
 }
 
@@ -25,17 +26,16 @@ body {
   display: flex;
   gap: 2px;
   flex-direction: column;
-  margin-left: 20px;
 }
 
 .navbar .more span:first-child {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #5cbd2f;
   width: 0%;
 }
 
 .navbar .more span:last-child {
   margin-top: 2px;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #5cbd2f;
   width: 0%;
 }
 
@@ -88,6 +88,16 @@ body {
   }
   .navbar .item a {
     color: red;
+  }
+}
+
+.navbar .navbar-brand {
+  margin: 0 50px;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar .navbar-brand {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
