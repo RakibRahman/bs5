@@ -1,0 +1,51 @@
+.reviews {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  .bdr-top {
+    @extend %top-bdr;
+  }
+  .review-box {
+    .review {
+      width: 400px;
+      & .review-info {
+        background: $color5;
+        padding: 0.5rem;
+        position: relative;
+        box-shadow: 1px 3px 3px 0px rgba(223, 230, 233, 1);
+        p {
+          margin-bottom: 2rem;
+        }
+
+        & .pp {
+          position: absolute;
+          right: 15%;
+          top: 125%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .reviewer {
+        margin-top: 8rem;
+        .bdr-top {
+          border-color: $color3;
+          border-top-width: 2px;
+        }
+      }
+    }
+  }
+  .review-box .review:last-child {
+    display: none;
+  }
+  @media screen and (min-width: 990px) {
+    .review-box .review:last-child {
+      display: block;
+    }
+    .review-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+    }
+  }
+}

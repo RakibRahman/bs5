@@ -1,4 +1,4 @@
-.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top {
+.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top, .reviews .bdr-top {
   margin: 10px auto;
   width: 100px;
   border-top: 4px solid black;
@@ -243,7 +243,7 @@ header form button {
 
 .thrideye {
   width: 80%;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 
 .thrideye h1 {
@@ -288,7 +288,7 @@ header form button {
     display: grid;
     grid-template-columns: repeat(2, 500px);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 6rem;
     place-content: center;
   }
 }
@@ -298,7 +298,7 @@ header form button {
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
   margin: 20px auto;
-  background: #dfe6e9;
+  background: #F8F7FD;
   padding: 0.8rem 0.2rem;
 }
 
@@ -368,7 +368,7 @@ header form button {
 .features__wrapper .facilities .box {
   border: 1px solid #091a2e;
   width: 350px;
-  background: #dfe6e9;
+  background: #F8F7FD;
   padding: 1.5rem 0.5rem;
   border-radius: 10px;
 }
@@ -380,14 +380,14 @@ header form button {
 }
 
 .features__wrapper .mockup img {
-  width: 80%;
-  margin-top: 2rem;
-  margin-left: 4.5rem;
+  margin-left: 2rem;
+  margin-top: 2.5rem;
 }
 
 @media screen and (min-width: 990px) {
   .features__wrapper {
     flex-direction: row-reverse;
+    gap: 5rem;
   }
   .features .facilities h1 {
     font-size: 1.2rem;
@@ -396,6 +396,7 @@ header form button {
     font-size: 1rem;
   }
   .features .facilities .facilities-list {
+    flex: 0 0 auto;
     width: 800px;
     display: flex;
     flex-wrap: wrap;
@@ -407,9 +408,62 @@ header form button {
     font-size: 1.2rem;
   }
   .features .mockup img {
-    width: 130%;
+    width: 150%;
     margin: 0;
     flex: 1;
+  }
+}
+
+.reviews {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviews .review-box .review {
+  width: 400px;
+}
+
+.reviews .review-box .review .review-info {
+  background: #F8F7FD;
+  padding: 0.5rem;
+  position: relative;
+  box-shadow: 1px 3px 3px 0px #dfe6e9;
+}
+
+.reviews .review-box .review .review-info p {
+  margin-bottom: 2rem;
+}
+
+.reviews .review-box .review .review-info .pp {
+  position: absolute;
+  right: 15%;
+  top: 125%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews .review-box .review .reviewer {
+  margin-top: 8rem;
+}
+
+.reviews .review-box .review .reviewer .bdr-top {
+  border-color: #5cbd2f;
+  border-top-width: 2px;
+}
+
+.reviews .review-box .review:last-child {
+  display: none;
+}
+
+@media screen and (min-width: 990px) {
+  .reviews .review-box .review:last-child {
+    display: block;
+  }
+  .reviews .review-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
