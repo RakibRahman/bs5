@@ -5,8 +5,10 @@
   border-top: 4px solid black;
 }
 $color1: whitesmoke;
-$color2: #020f21;
+$color2: #091a2e;
 $color3: #5cbd2f;
+$color4: #122533;
+$color5: #dfe6e9;
 .navbar {
   width: 80%;
   margin: 0 auto;
@@ -90,7 +92,7 @@ $color3: #5cbd2f;
 
 //header
 header {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   color: $color1;
   padding: 4rem;
@@ -117,6 +119,7 @@ header {
     }
   }
   @media screen and (min-width: 990px) {
+    width: 80%;
     padding-top: 8rem;
     text-align: center;
     form {
@@ -162,6 +165,7 @@ header {
     }
   }
 }
+// full scan
 .full__scan {
   width: 80%;
   margin: 20px auto;
@@ -210,6 +214,94 @@ header {
     }
     @media screen and (min-width: 990px) {
       display: flex;
+    }
+  }
+}
+
+//thrideye
+.thrideye {
+  width: 80%;
+  margin: 20px auto;
+  .bdr-top {
+    @extend %top-bdr;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .cards {
+    margin: 30px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .card {
+      border: none;
+      & .top-bar {
+        @extend %top-bdr;
+        border-color: $color3;
+        margin-left: 3rem;
+      }
+      h2 {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        & img {
+          width: 10%;
+        }
+      }
+      p {
+        margin-top: 10px;
+        margin-left: 2rem;
+        font-weight: 500;
+      }
+    }
+    @media screen and (min-width: 990px) {
+      display: grid;
+      grid-template-columns: repeat(2, 500px);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      place-content: center;
+    }
+  }
+}
+
+//statistics
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  // margin: 20px auto;
+  background: $color5;
+  padding: 0.5rem 0.2rem;
+
+  .stat {
+    h1 {
+      display: grid;
+      place-items: center;
+
+      font-size: 3rem;
+      color: $color2;
+      & img {
+        width: 10%;
+      }
+      @media screen and(min-width: 990px) {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+    p {
+      font-size: 1.1rem;
+      margin-left: 3rem;
+      font-weight: 500;
+    }
+  }
+  @media screen and (min-width: 990px) {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 3rem;
+
+    & .stat:first-child {
+      margin-left: 3rem;
     }
   }
 }
