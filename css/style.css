@@ -1,7 +1,13 @@
-.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar {
+.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top {
   margin: 10px auto;
   width: 100px;
   border-top: 4px solid black;
+}
+
+.features .mockup img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .navbar {
@@ -290,8 +296,9 @@ header form button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
+  margin: 20px auto;
   background: #dfe6e9;
-  padding: 0.5rem 0.2rem;
+  padding: 0.8rem 0.2rem;
 }
 
 .statistics .stat h1 {
@@ -302,7 +309,7 @@ header form button {
 }
 
 .statistics .stat h1 img {
-  width: 10%;
+  width: 15%;
 }
 
 @media screen and (min-width: 990px) {
@@ -314,7 +321,7 @@ header form button {
 }
 
 .statistics .stat p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-left: 3rem;
   font-weight: 500;
 }
@@ -327,5 +334,37 @@ header form button {
   .statistics .stat:first-child {
     margin-left: 3rem;
   }
+}
+
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__wrapper .facilities {
+  text-align: center;
+}
+
+.features__wrapper .facilities .facilities-list {
+  display: grid;
+  place-content: center;
+  gap: 15px;
+}
+
+.features__wrapper .facilities .box {
+  border: 1px solid darkgray;
+  width: 380px;
+  background: #dfe6e9;
+  padding: 1.5rem 0;
+  border-radius: 10px;
+}
+
+.features__wrapper .facilities .box p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
