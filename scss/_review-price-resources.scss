@@ -1,10 +1,12 @@
 .reviews {
-  width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
 
   .bdr-top {
     @extend %top-bdr;
+  }
+  .wrapper {
+    margin-top: 20px;
   }
   .review-box {
     .review {
@@ -38,6 +40,9 @@
     display: none;
   }
   @media screen and (min-width: 990px) {
+    .reviews {
+      width: 80%;
+    }
     .review-box .review:last-child {
       display: block;
     }
@@ -46,6 +51,111 @@
       justify-content: center;
       align-items: center;
       gap: 5rem;
+    }
+  }
+}
+
+//pricing
+
+.pricing {
+  // width: 80%;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 1rem;
+  & .bdr-top {
+    @extend %top-bdr;
+  }
+  .options {
+    margin-top: 7rem;
+    background: $color5;
+    img {
+      @extend %img-responsive;
+      width: 80%;
+    }
+  }
+  .price-list {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    // gap: 1rem;
+
+    .price {
+      width: 200px;
+
+      border: 2px solid $color4;
+      border-top-width: 8px;
+      padding: 0.5rem 1rem;
+    }
+    .month {
+      // margin-bottom: 20px;
+    }
+  }
+  .check {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      width: 20%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .trail {
+    margin-top: 30px;
+    p {
+      color: $color3;
+    }
+    button {
+      padding: 0.5rem 2rem;
+      background: darkblue;
+      color: whitesmoke;
+      border-radius: 6px;
+    }
+  }
+  .arrow {
+    margin-top: 20px;
+    margin-left: 15rem;
+  }
+
+  .price-pc {
+    display: none;
+  }
+  @media screen and (min-width: 990px) {
+    .price h2 {
+      font-size: 1.1rem;
+    }
+    .arrow {
+      display: none;
+    }
+    .price-pc {
+      display: block;
+      h2 {
+        font-size: 1rem;
+      }
+    }
+    .price-list {
+      gap: 1rem;
+    }
+    .custom {
+      text-align: left;
+      font-size: 0.8rem;
+      font-weight: 500;
+      line-height: 1.65;
+      ul {
+        li::marker {
+          font-size: 1.5rem;
+          color: $color2;
+        }
+      }
+      .month {
+        margin-top: 3rem;
+      }
     }
   }
 }

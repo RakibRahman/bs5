@@ -1,10 +1,10 @@
-.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top, .reviews .bdr-top {
+.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top, .reviews .bdr-top, .pricing .bdr-top {
   margin: 10px auto;
   width: 100px;
   border-top: 4px solid black;
 }
 
-.features__wrapper .mockup img {
+.features__wrapper .mockup img, .pricing .options img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -415,9 +415,12 @@ header form button {
 }
 
 .reviews {
-  width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
+}
+
+.reviews .wrapper {
+  margin-top: 20px;
 }
 
 .reviews .review-box .review {
@@ -456,6 +459,9 @@ header form button {
 }
 
 @media screen and (min-width: 990px) {
+  .reviews .reviews {
+    width: 80%;
+  }
   .reviews .review-box .review:last-child {
     display: block;
   }
@@ -464,6 +470,105 @@ header form button {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+  }
+}
+
+.pricing {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 1rem;
+}
+
+.pricing .options {
+  margin-top: 7rem;
+  background: #F8F7FD;
+}
+
+.pricing .options img {
+  width: 80%;
+}
+
+.pricing .price-list {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing .price-list .price {
+  width: 200px;
+  border: 2px solid #122533;
+  border-top-width: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.pricing .check {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .check img {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+}
+
+.pricing .trail {
+  margin-top: 30px;
+}
+
+.pricing .trail p {
+  color: #5cbd2f;
+}
+
+.pricing .trail button {
+  padding: 0.5rem 2rem;
+  background: darkblue;
+  color: whitesmoke;
+  border-radius: 6px;
+}
+
+.pricing .arrow {
+  margin-top: 20px;
+  margin-left: 15rem;
+}
+
+.pricing .price-pc {
+  display: none;
+}
+
+@media screen and (min-width: 990px) {
+  .pricing .price h2 {
+    font-size: 1.1rem;
+  }
+  .pricing .arrow {
+    display: none;
+  }
+  .pricing .price-pc {
+    display: block;
+  }
+  .pricing .price-pc h2 {
+    font-size: 1rem;
+  }
+  .pricing .price-list {
+    gap: 1rem;
+  }
+  .pricing .custom {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.65;
+  }
+  .pricing .custom ul li::marker {
+    font-size: 1.5rem;
+    color: #091a2e;
+  }
+  .pricing .custom .month {
+    margin-top: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
