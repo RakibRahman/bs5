@@ -1,4 +1,4 @@
-.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top, .reviews .bdr-top, .pricing .bdr-top, .banner .start .bdr-top {
+.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top, .reviews .bdr-top, .pricing .bdr-top, .banner .start .bdr-top, .resources .bdr-top {
   margin: 10px auto;
   width: 100px;
   border-top: 4px solid black;
@@ -616,6 +616,65 @@ header form button {
   }
   .banner .start h1 {
     font-size: 1.8rem;
+  }
+}
+
+.resources {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.resources .card-box {
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.resources .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.resources .card-body {
+  text-align: left;
+  background: #f8f7fd;
+}
+
+.resources .card-body .c-btn {
+  background: #00008b !important;
+}
+
+.resources .card-title {
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid #091a2e;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.resources .box-hidden {
+  display: none;
+}
+
+.resources .arrow {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 990px) {
+  .resources {
+    width: 80%;
+  }
+  .resources .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .resources .box-hidden {
+    display: block;
+  }
+  .resources .arrow {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

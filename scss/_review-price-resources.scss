@@ -212,3 +212,60 @@
     }
   }
 }
+
+//resources
+
+.resources {
+  text-align: center;
+  margin: 50px auto;
+  .bdr-top {
+    @extend %top-bdr;
+  }
+  .card-box {
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+  }
+  .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .card-body {
+    text-align: left;
+    background: $color5;
+
+    .c-btn {
+      background: $color4 !important;
+    }
+  }
+  .card-title {
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid $color2;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .box-hidden {
+    display: none;
+  }
+  .arrow {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 990px) {
+    width: 80%;
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .box-hidden {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+  }
+}
