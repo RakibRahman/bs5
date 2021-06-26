@@ -1,10 +1,10 @@
-.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top, .reviews .bdr-top, .pricing .bdr-top {
+.companies .bdr-top, .full__scan .bdr-top, .thrideye .bdr-top, .thrideye .cards .card .top-bar, .features__wrapper .facilities .bdr-top, .reviews .bdr-top, .pricing .bdr-top, .banner .start .bdr-top {
   margin: 10px auto;
   width: 100px;
   border-top: 4px solid black;
 }
 
-.features__wrapper .mockup img, .pricing .options img {
+.features__wrapper .mockup img, .pricing .options img, .banner .logo img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -298,7 +298,7 @@ header form button {
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
   margin: 20px auto;
-  background: #F8F7FD;
+  background: #f8f7fd;
   padding: 0.8rem 0.2rem;
 }
 
@@ -368,7 +368,7 @@ header form button {
 .features__wrapper .facilities .box {
   border: 1px solid #091a2e;
   width: 350px;
-  background: #F8F7FD;
+  background: #f8f7fd;
   padding: 1.5rem 0.5rem;
   border-radius: 10px;
 }
@@ -428,7 +428,7 @@ header form button {
 }
 
 .reviews .review-box .review .review-info {
-  background: #F8F7FD;
+  background: #f8f7fd;
   padding: 0.5rem;
   position: relative;
   box-shadow: 1px 3px 3px 0px #dfe6e9;
@@ -481,7 +481,7 @@ header form button {
 
 .pricing .options {
   margin-top: 7rem;
-  background: #F8F7FD;
+  background: #f8f7fd;
 }
 
 .pricing .options img {
@@ -497,7 +497,7 @@ header form button {
 
 .pricing .price-list .price {
   width: 200px;
-  border: 2px solid #122533;
+  border: 2px solid #00008b;
   border-top-width: 8px;
   padding: 0.5rem 1rem;
 }
@@ -569,6 +569,53 @@ header form button {
   }
   .pricing .custom .month {
     margin-top: 3rem;
+  }
+}
+
+.banner {
+  text-align: center;
+  background: #00008b;
+  padding: 2rem 4rem;
+  color: whitesmoke;
+  margin: 20px 0 30px;
+}
+
+.banner .logo img {
+  width: 60%;
+}
+
+.banner .start .bdr-top {
+  border-color: whitesmoke;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner .start h1 {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.banner .start button {
+  padding: 0.5rem 2rem;
+  background: whitesmoke;
+  color: #091a2e;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 990px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 4rem;
+  }
+  .banner .logo img {
+    width: 40%;
+  }
+  .banner .start h1 {
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

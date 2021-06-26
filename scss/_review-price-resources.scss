@@ -159,3 +159,56 @@
     }
   }
 }
+
+//BANNER
+
+.banner {
+  text-align: center;
+  background: $color4;
+  padding: 2rem 4rem;
+  color: $color1;
+  margin: 20px 0 30px;
+  .logo {
+    img {
+      @extend %img-responsive;
+      width: 60%;
+    }
+  }
+  .start {
+    .bdr-top {
+      @extend %top-bdr;
+      border-color: $color1;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    button {
+      padding: 0.5rem 2rem;
+      background: $color1;
+      color: $color2;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+  }
+  @media screen and (min-width: 990px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 4rem;
+
+    .logo {
+      img {
+        width: 40%;
+      }
+    }
+    .start {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
