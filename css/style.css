@@ -50,6 +50,18 @@ body {
   background: whitesmoke;
 }
 
+@media screen and (min-width: 990px) {
+  .navbar .navbar-brand {
+    margin-left: 2rem;
+  }
+  .navbar .main-ul {
+    margin-left: 20rem;
+  }
+  .navbar .more-ul {
+    margin-left: 2rem;
+  }
+}
+
 .navbar img {
   width: 150px;
   height: auto;

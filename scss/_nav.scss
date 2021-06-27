@@ -7,6 +7,18 @@
   font-weight: bold;
   background: $color1;
 
+  @media screen and (min-width: 990px) {
+    .navbar-brand {
+      margin-left: 2rem;
+    }
+    .main-ul {
+      margin-left: 20rem;
+    }
+    .more-ul {
+      margin-left: 2rem;
+    }
+  }
+
   & img {
     width: 150px;
     height: auto;
