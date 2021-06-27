@@ -20,6 +20,10 @@
         @extend %top-bdr;
         border-color: $color3;
         margin-left: 3rem;
+
+        @media screen and (max-width: 520px) {
+          margin-left: 2.2rem;
+        }
       }
       h2 {
         display: flex;

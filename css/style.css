@@ -312,6 +312,12 @@ header form button {
   margin-left: 3rem;
 }
 
+@media screen and (max-width: 520px) {
+  .thrideye .cards .card .top-bar {
+    margin-left: 2.2rem;
+  }
+}
+
 .thrideye .cards .card h2 {
   display: flex;
   gap: 2px;
