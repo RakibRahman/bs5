@@ -1,9 +1,9 @@
 // navbar
 
 .navbar {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   background: $color1;
 
@@ -71,12 +71,18 @@
       display: flex;
       flex-direction: column;
     }
-    width: 100%;
   }
-  .navbar-brand {
-    margin: 0 50px;
-    @media screen and (max-width: 990px) {
-      margin: 0;
+
+  @media screen and (min-width: 990px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 400px) {
+    .m-log {
+      display: none;
+    }
+    .m-log2 {
+      display: block;
     }
   }
 }
