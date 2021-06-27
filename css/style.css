@@ -42,10 +42,6 @@ body {
   width: 100%;
 }
 
-main {
-  border: 1px solid red;
-}
-
 .navbar {
   width: 100%;
   margin: 0 auto;
@@ -461,7 +457,7 @@ header form button {
 }
 
 .reviews .review-box .review {
-  width: 400px;
+  width: 100%;
 }
 
 .reviews .review-box .review .review-info {
@@ -507,6 +503,9 @@ header form button {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+  }
+  .reviews .review-box .review {
+    width: 400px;
   }
 }
 
