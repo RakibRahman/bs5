@@ -520,10 +520,6 @@ header form button {
   background: #f8f7fd;
 }
 
-.pricing .options img {
-  width: 80%;
-}
-
 .pricing .price-list {
   margin-top: 10px;
   text-align: center;
@@ -605,6 +601,9 @@ header form button {
   }
   .pricing .custom .month {
     margin-top: 3rem;
+  }
+  .pricing .check {
+    gap: 2.8rem;
   }
 }
 

@@ -73,7 +73,7 @@
     background: $color5;
     img {
       @extend %img-responsive;
-      width: 80%;
+      // width: 80%;
     }
   }
   .price-list {
@@ -153,6 +153,9 @@
       .month {
         margin-top: 3rem;
       }
+    }
+    .check {
+      gap: 2.8rem;
     }
   }
 }
